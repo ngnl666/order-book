@@ -41,6 +41,14 @@ order-book/
 └── vite.config.ts
 ```
 
+## Tech Stack
+
+- React19
+- TypeScript
+- Tailwind CSS
+- Vite
+- eslint + prettier
+
 ## Install Dependencies
 
 ```bash
