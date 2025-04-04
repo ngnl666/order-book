@@ -76,3 +76,4 @@ npm run dev
 - Number Formatting - Uses commas as thousands separators for large numbers
 - Automatic Reconnection - Handles WebSocket connection interruptions
 - Efficient Data Processing - Optimized incremental update processing logic
+- CI/CD - Continuous Integration and Deployment using GitHub Actions and Vercel
