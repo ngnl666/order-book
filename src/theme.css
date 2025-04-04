@@ -1,0 +1,91 @@
+@theme {
+  /* color palette */
+  --color-app-bg: #131b29;
+  --color-text-default: #f0f4f8;
+  --color-text-header: #8698aa;
+  --color-price-buy: #00b15d;
+  --color-price-sell: #ff5b5a;
+  --color-row-hover: #1e3059;
+  --color-bar-buy: rgba(16, 186, 104, 0.12);
+  --color-bar-sell: rgba(255, 90, 90, 0.12);
+  --color-flash-green: rgba(0, 177, 93, 0.5);
+  --color-flash-red: rgba(255, 91, 90, 0.5);
+  --color-last-price-up-bg: rgba(16, 186, 104, 0.12);
+  --color-last-price-down-bg: rgba(255, 90, 90, 0.12);
+  --color-last-price-same-bg: rgba(134, 152, 170, 0.12);
+
+  /* animation */
+  --animate-flash-green: flashGreen 0.5s ease-out;
+  --animate-flash-red: flashRed 0.5s ease-out;
+
+  @keyframes flashGreen {
+    0% {
+      background-color: rgba(0, 177, 93, 0.5);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  @keyframes flashRed {
+    0% {
+      background-color: rgba(255, 91, 90, 0.5);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+}
+
+/* utilities */
+.bg-app-bg {
+  background-color: var(--color-app-bg);
+}
+
+.text-text-default {
+  color: var(--color-text-default);
+}
+
+.text-text-header {
+  color: var(--color-text-header);
+}
+
+.text-price-buy {
+  color: var(--color-price-buy);
+}
+
+.text-price-sell {
+  color: var(--color-price-sell);
+}
+
+.bg-row-hover {
+  background-color: var(--color-row-hover);
+}
+
+.bg-last-price-up-bg {
+  background-color: var(--color-last-price-up-bg);
+}
+
+.bg-last-price-down-bg {
+  background-color: var(--color-last-price-down-bg);
+}
+
+.bg-last-price-same-bg {
+  background-color: var(--color-last-price-same-bg);
+}
+
+.animate-flash-green {
+  animation: var(--animate-flash-green);
+}
+
+.animate-flash-red {
+  animation: var(--animate-flash-red);
+}
+
+.bg-highlight-green {
+  background-color: rgba(0, 177, 93, 0.5);
+}
+
+.bg-highlight-red {
+  background-color: rgba(255, 91, 90, 0.5);
+}
